@@ -6,15 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="UX implementation plan for the LinkedIn Marketing Solutions Ads Ecosystem redesign">
+        <meta name="description" content="UX implementation plan — LinkedIn Marketing Solutions Ads Ecosystem redesign">
       
       
         <meta name="author" content="Ann Kang">
       
       
       
-        <link rel="prev" href="../phase-5-production/localization/">
+        <link rel="prev" href="../task-07/">
       
+      
+        <link rel="next" href="../task-09/">
       
       
         
@@ -25,7 +27,7 @@
     
     
       
-        <title>Self-Review - LMS Ads Ecosystem — Project Plan</title>
+        <title>Task 8 · Production Handoff - LMS Ads Ecosystem</title>
       
     
     
@@ -46,10 +48,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -62,12 +66,10 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#self-review" class="md-skip">
+        <a href="#task-8-lem-aem-production-handoff" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="LMS Ads Ecosystem — Project Plan" class="md-header__button md-logo" aria-label="LMS Ads Ecosystem — Project Plan" data-md-component="logo">
+    <a href=".." title="LMS Ads Ecosystem" class="md-header__button md-logo" aria-label="LMS Ads Ecosystem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,13 +108,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            LMS Ads Ecosystem — Project Plan
+            LMS Ads Ecosystem
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Self-Review
+              Task 8 · Production Handoff
             
           </span>
         </div>
@@ -120,33 +122,7 @@
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -168,11 +144,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
-          </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
@@ -233,11 +204,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../overview/" class="md-tabs__link">
+        <a href="../brief/" class="md-tabs__link">
           
   
   
-  Overview
+    
+  
+  Project
 
         </a>
       </li>
@@ -253,11 +226,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../phase-1-discovery/competitive-audit/" class="md-tabs__link">
+        <a href="../task-01/" class="md-tabs__link">
           
   
   
-  Phase 1 — Discovery
+    
+  
+  Phase 1 — Research
 
         </a>
       </li>
@@ -273,11 +248,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../phase-2-ia/ecosystem-ia-map/" class="md-tabs__link">
+        <a href="../task-02/" class="md-tabs__link">
           
   
   
-  Phase 2 — Information Architecture
+    
+  
+  Phase 2 — Architecture
 
         </a>
       </li>
@@ -293,11 +270,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../phase-3-design/interlinking-patterns/" class="md-tabs__link">
+        <a href="../task-03/" class="md-tabs__link">
           
   
   
-  Phase 3 — Design Exploration
+    
+  
+  Phase 3 — Design
 
         </a>
       </li>
@@ -313,31 +292,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../phase-4-specs/breadcrumbs-spec/" class="md-tabs__link">
+        <a href="../task-05/" class="md-tabs__link">
           
   
   
-  Phase 4 — Design Specs
-
-        </a>
-      </li>
     
   
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../phase-5-production/content-optimizations/" class="md-tabs__link">
-          
-  
-  
-  Phase 5 — Content & Production
+  Phase 4 — Specs
 
         </a>
       </li>
@@ -352,17 +313,20 @@
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../task-07/" class="md-tabs__link">
+          
   
   
     
   
-  Self-Review
+  Phase 5 — Production
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -394,13 +358,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="LMS Ads Ecosystem — Project Plan" class="md-nav__button md-logo" aria-label="LMS Ads Ecosystem — Project Plan" data-md-component="logo">
+    <a href=".." title="LMS Ads Ecosystem" class="md-nav__button md-logo" aria-label="LMS Ads Ecosystem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    LMS Ads Ecosystem — Project Plan
+    LMS Ads Ecosystem
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -440,6 +404,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -452,9 +424,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -464,7 +434,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Project
   
 
     
@@ -480,7 +450,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Overview
+    Project
   
 
           </label>
@@ -493,14 +463,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../brief/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Project Brief
+    Brief & Goals
   
 
     
@@ -542,6 +512,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -557,6 +555,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -569,9 +571,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -581,7 +581,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 1 — Discovery
+    Phase 1 — Research
   
 
     
@@ -597,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Phase 1 — Discovery
+    Phase 1 — Research
   
 
           </label>
@@ -610,14 +610,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-1-discovery/competitive-audit/" class="md-nav__link">
+      <a href="../task-01/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Competitive Audit
+    Task 1 · Discovery & Audit
   
 
     
@@ -646,6 +646,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -658,9 +662,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -670,7 +672,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 2 — Information Architecture
+    Phase 2 — Architecture
   
 
     
@@ -686,7 +688,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Phase 2 — Information Architecture
+    Phase 2 — Architecture
   
 
           </label>
@@ -699,14 +701,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-2-ia/ecosystem-ia-map/" class="md-nav__link">
+      <a href="../task-02/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Ecosystem IA Map
+    Task 2 · Ecosystem IA Map
   
 
     
@@ -735,6 +737,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -747,9 +755,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -759,7 +765,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 3 — Design Exploration
+    Phase 3 — Design
   
 
     
@@ -775,7 +781,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Phase 3 — Design Exploration
+    Phase 3 — Design
   
 
           </label>
@@ -788,14 +794,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-3-design/interlinking-patterns/" class="md-nav__link">
+      <a href="../task-03/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Interlinking Patterns
+    Task 3 · Interlinking Patterns
   
 
     
@@ -816,14 +822,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-3-design/wireframes/" class="md-nav__link">
+      <a href="../task-04/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Wireframes
+    Task 4 · Wireframes
   
 
     
@@ -852,6 +858,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -864,9 +876,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -876,7 +886,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 4 — Design Specs
+    Phase 4 — Specs
   
 
     
@@ -892,7 +902,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Phase 4 — Design Specs
+    Phase 4 — Specs
   
 
           </label>
@@ -905,14 +915,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-4-specs/breadcrumbs-spec/" class="md-nav__link">
+      <a href="../task-05/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Breadcrumbs & Interlinking
+    Task 5 · Breadcrumbs & Interlinking
   
 
     
@@ -933,14 +943,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-4-specs/hifi-designs/" class="md-nav__link">
+      <a href="../task-06/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Hi-Fi Designs
+    Task 6 · Hi-Fi Designs
   
 
     
@@ -965,35 +975,46 @@
       
   
   
+    
   
   
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Phase 5 — Content & Production
+    Phase 5 — Production
   
 
     
@@ -1004,12 +1025,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Phase 5 — Content & Production
+    Phase 5 — Production
   
 
           </label>
@@ -1022,14 +1043,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../phase-5-production/content-optimizations/" class="md-nav__link">
+      <a href="../task-07/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Content Optimizations
+    Task 7 · Content Optimizations
   
 
     
@@ -1045,69 +1066,6 @@
             
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../phase-5-production/production-handoff/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Production Handoff
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../phase-5-production/localization/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Localization
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
   
   
     
@@ -1129,7 +1087,7 @@
   <span class="md-ellipsis">
     
   
-    Self-Review
+    Task 8 · Production Handoff
   
 
     
@@ -1147,7 +1105,7 @@
   <span class="md-ellipsis">
     
   
-    Self-Review
+    Task 8 · Production Handoff
   
 
     
@@ -1175,10 +1133,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#spec-coverage" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Spec Coverage
+        Steps
       
     </span>
   </a>
@@ -1186,32 +1144,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#known-gaps-acknowledged-out-of-scope" class="md-nav__link">
+  <a href="#qa-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Known Gaps (Acknowledged, Out of Scope)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#placeholder-scan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Placeholder Scan
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-consistency-check" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Type Consistency Check
+        QA Checklist
       
     </span>
   </a>
@@ -1221,6 +1157,42 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Task 9 · Localization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1255,10 +1227,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#spec-coverage" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Spec Coverage
+        Steps
       
     </span>
   </a>
@@ -1266,32 +1238,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#known-gaps-acknowledged-out-of-scope" class="md-nav__link">
+  <a href="#qa-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Known Gaps (Acknowledged, Out of Scope)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#placeholder-scan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Placeholder Scan
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-consistency-check" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Type Consistency Check
+        QA Checklist
       
     </span>
   </a>
@@ -1315,137 +1265,118 @@
 
 
 
-<h1 id="self-review">Self-Review<a class="headerlink" href="#self-review" title="Permanent link">&para;</a></h1>
-<p>This page tracks spec coverage, known gaps, and consistency checks across the full plan.</p>
-<hr />
-<h2 id="spec-coverage">Spec Coverage<a class="headerlink" href="#spec-coverage" title="Permanent link">&para;</a></h2>
+<h1 id="task-8-lem-aem-production-handoff">Task 8 · LEM / AEM Production Handoff<a class="headerlink" href="#task-8-lem-aem-production-handoff" title="Permanent link">&para;</a></h1>
+<p><span class="phase-label">Phase 5 — Production</span></p>
+<div class="task-meta">
 <table>
 <thead>
 <tr>
-<th>Deliverable</th>
-<th>Covered by</th>
-<th>Status</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Ecosystem IA</td>
-<td>Task 2 — FigJam map (current state + proposed + 3 pages selected)</td>
-<td>✅</td>
+<td><strong>Deliverable</strong></td>
+<td><code>handoff/lms-ads-ecosystem-handoff-notes.md</code> · annotated Figma</td>
 </tr>
 <tr>
-<td>Breadcrumbs + interlinking</td>
-<td>Task 3 (4-pattern exploration) + Task 5 (annotated spec)</td>
-<td>✅</td>
+<td><strong>Owner</strong></td>
+<td>UX Lead → LEM</td>
 </tr>
 <tr>
-<td>Content Optimizations (3 pages)</td>
-<td>Task 7</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>UX Wireframes (3 pages)</td>
-<td>Task 4</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Hi-Fi Designs (3 pages)</td>
-<td>Task 6</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>LEM Production handoff</td>
-<td>Task 8</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Localization</td>
-<td>Task 9</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Competitive audit / research</td>
-<td>Task 1</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>AEM constraints flagged</td>
-<td>Tasks 3, 4, 5, 6, 8</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>KPI mechanism (cross-page navigation)</td>
-<td>Interlinking patterns in Tasks 3 + 5</td>
-<td>✅</td>
+<td><strong>Done when</strong></td>
+<td>Production kickoff held; all Open Items triaged or resolved</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="known-gaps-acknowledged-out-of-scope">Known Gaps (Acknowledged, Out of Scope)<a class="headerlink" href="#known-gaps-acknowledged-out-of-scope" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Formal UXR / user testing</p>
-<p>Confirmed not in this engagement. Decisions are driven by SEO data, heuristics, and competitive benchmarking.</p>
-<p><strong>Post-launch recommendation:</strong> run an analytics review on session depth and cross-page click rates 30–60 days after launch.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Audience + user problem fields in brief</p>
-<p>Both fields are blank in the intake brief. Confirmed via interview:</p>
-<p><strong>Audience:</strong> Digital marketers and advertisers who discover LinkedIn Ads content via organic search and need quick access to specs, best practices, and product information.</p>
-<p><strong>User problem:</strong> Search-landing dead ends — users arrive on isolated pages with no visible pathway to related content.</p>
-<p>Recommend filling these fields in the brief doc before the kickoff meeting.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Final URLs for net-new pages</p>
-<p>Not yet defined. The IA phase (Task 2) will determine whether any new URL paths are needed (e.g. new hub pages or restructured slugs). Flag for the SEO team before production build starts — any URL changes require redirect planning.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Test plan</p>
-<p>The brief's Test Plan field is empty. Formal testing is not in scope for this engagement. Post-launch analytics (session depth, cross-page click rates) will serve as the measurement mechanism for the KPI.</p>
 </div>
 <hr />
-<h2 id="placeholder-scan">Placeholder Scan<a class="headerlink" href="#placeholder-scan" title="Permanent link">&para;</a></h2>
-<p>No TBDs, TODOs, "implement later," or vague instructions remain in this plan. Every step contains the actual content, structure, or code needed to execute it.</p>
-<hr />
-<h2 id="type-consistency-check">Type Consistency Check<a class="headerlink" href="#type-consistency-check" title="Permanent link">&para;</a></h2>
-<p>All references to the following are consistent across Tasks 3–9:</p>
+<h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Add Annotations layer to hi-fi Figma</strong></p>
+<p>Every element requiring AEM authoring or configuration must have an annotation:</p>
 <table>
 <thead>
 <tr>
-<th>Term</th>
-<th>Used consistently as</th>
+<th>Element</th>
+<th>Annotate with</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>The 3 page types</td>
-<td>"Product page," "Tips &amp; Best Practices page," "Specs page"</td>
+<td>Breadcrumb</td>
+<td>AEM component name · path configuration · link destination per node</td>
 </tr>
 <tr>
-<td>Card component</td>
-<td>"Ecosystem Card"</td>
+<td>Inline links</td>
+<td>Exact destination URL · link text as authored · same/new tab</td>
 </tr>
 <tr>
-<td>Table component</td>
-<td>"Specs Table"</td>
+<td>Related cards</td>
+<td>Card 1 + Card 2: destination URL · title · description</td>
 </tr>
 <tr>
-<td>Breadcrumb path format</td>
-<td><code>Advertise &gt; Ads &gt; [Ad Type Name] &gt; [Page type]</code></td>
+<td>Specs table</td>
+<td>AEM component name — or: <em>"New component required — see Component Proposals"</em></td>
 </tr>
 <tr>
-<td>Inline link pattern</td>
-<td>"Inline contextual links"</td>
+<td>New components</td>
+<td><em>"New component: [name] — see Component Proposals page in Figma"</em></td>
 </tr>
 <tr>
-<td>Card related module</td>
-<td>"Related content cards" / "You might also need" module</td>
-</tr>
-<tr>
-<td>Design system</td>
-<td>"Our Community Design System"</td>
+<td>Responsive behavior</td>
+<td>How element behaves at 375px mobile breakpoint</td>
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
+<hr />
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Write handoff notes doc</strong> — <code>handoff/lms-ads-ecosystem-handoff-notes.md</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gh"># LMS Ads Ecosystem — Production Handoff Notes</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gu">## Summary of Changes per Page</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gu">### Product page — what changed vs. current production</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gu">### Tips page — what changed</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gu">### Specs page — what changed</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="gu">## New Components Required</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">-</span><span class="w"> </span>Ecosystem Card: [description + Figma link]
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">-</span><span class="w"> </span>Specs Table (if needed): [description + Figma link]
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="gu">## Breadcrumb Configuration</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>| Page | Breadcrumb trail | AEM config notes |
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="gu">## Related Content Card Configuration</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>| Source page | Card 1 URL + copy | Card 2 URL + copy |
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="gu">## Inline Link Authoring Instructions</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>[Paste Task 5 placement rules verbatim here]
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="gu">## Open Items</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>[Unresolved AEM questions]
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="gu">## QA Checklist</span>
+</code></pre></div>
+</li>
+</ul>
+<hr />
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Production kickoff meeting</strong> — walk annotated Figma + doc; confirm component estimate timelines; resolve red stickies from Task 2 FigJam</li>
+</ul>
+<hr />
+<h2 id="qa-checklist">QA Checklist<a class="headerlink" href="#qa-checklist" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Breadcrumbs display and link correctly on all 3 pages</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Related cards show correct sibling pages per page type</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Inline links point to correct destinations</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mobile (375px): breadcrumbs truncate correctly</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> DE/NL: no text overflow in localized strings</li>
+</ul>
 
 
 
@@ -1481,7 +1412,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../phase-5-production/localization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Localization">
+          <a href="../task-07/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Task 7 · Content Optimizations">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1491,11 +1422,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Localization
+                Task 7 · Content Optimizations
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../task-09/" class="md-footer__link md-footer__link--next" aria-label="Next: Task 9 · Localization">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Task 9 · Localization
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1508,22 +1455,6 @@
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
-    </a>
-  
-</div>
-      
-        
-<div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://business.linkedin.com/advertise/ads" target="_blank" rel="noopener" title="business.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
 </div>
@@ -1541,7 +1472,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "search.share", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
