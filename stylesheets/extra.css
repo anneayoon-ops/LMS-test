@@ -290,29 +290,9 @@ body {
 .badge-gray  { background: var(--notion-tag-bg); color: #73726e; }
 .badge-orange { background: #ffedd5; color: #c2410c; }
 
-/* ── Right-side TOC ── */
-.md-nav--secondary .md-nav__title {
-  font-size: 12px;
-  color: #b9b8b4;
-  padding: 0.4rem 0.6rem 0.2rem;
-}
-
-.md-nav--secondary .md-nav__link {
-  font-size: 12px;
-  color: #b9b8b4;
-  padding: 0.18rem 0.6rem;
-  line-height: 1.4;
-}
-
-.md-nav--secondary .md-nav__link:hover {
-  color: #73726e;
-  background: none;
-}
-
-.md-nav--secondary .md-nav__link--active {
-  color: #37352f;
-  font-weight: 500;
-  background: none;
+/* ── Right-side TOC — hidden ── */
+.md-sidebar--secondary {
+  display: none;
 }
 
 /* ── Checklist ── */
