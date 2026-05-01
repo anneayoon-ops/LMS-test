@@ -44,28 +44,6 @@ body {
   color: #37352f;
 }
 
-/* ── Tabs ── */
-.md-tabs {
-  background-color: #ffffff;
-  border-bottom: 1px solid var(--notion-border);
-  box-shadow: none;
-}
-
-.md-tabs__link {
-  color: #73726e !important;
-  font-size: 0.82rem;
-  font-weight: 500;
-}
-
-.md-tabs__link--active,
-.md-tabs__link:hover {
-  color: #37352f !important;
-}
-
-.md-tabs__indicator {
-  background-color: #37352f;
-}
-
 /* ── Sidebar / Navigation ── */
 .md-sidebar {
   background-color: #fbfbfa;
@@ -328,7 +306,7 @@ body {
   margin: 1.5rem 0;
 }
 
-/* ── Footer ── */
+/* ── Footer / Prev-Next ── */
 .md-footer {
   background-color: var(--notion-surface);
   border-top: 1px solid var(--notion-border);
@@ -336,6 +314,39 @@ body {
 
 .md-footer-meta {
   background-color: var(--notion-surface);
+}
+
+.md-footer__inner {
+  padding: 1rem 1.2rem;
+}
+
+.md-footer__link {
+  background-color: #ffffff;
+  border: 1px solid var(--notion-border);
+  border-radius: 6px;
+  padding: 0.8rem 1.1rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  max-width: 48%;
+}
+
+.md-footer__link:hover {
+  border-color: #b9b8b4;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  text-decoration: none;
+}
+
+.md-footer__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #37352f;
+}
+
+.md-footer__direction {
+  font-size: 0.72rem;
+  color: #73726e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 /* ── Search ── */
