@@ -1,0 +1,82 @@
+site_name: LMS Ads Ecosystem — Project Plan
+site_description: UX implementation plan for the LinkedIn Marketing Solutions Ads Ecosystem redesign
+site_author: Ann Kang
+
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      title: On this page
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://business.linkedin.com/advertise/ads
+
+nav:
+  - Home: index.md
+  - Overview:
+      - Project Brief: overview.md
+      - Deliverable Map: deliverables.md
+  - Phase 1 — Discovery:
+      - Competitive Audit: phase-1-discovery/competitive-audit.md
+  - Phase 2 — Information Architecture:
+      - Ecosystem IA Map: phase-2-ia/ecosystem-ia-map.md
+  - Phase 3 — Design Exploration:
+      - Interlinking Patterns: phase-3-design/interlinking-patterns.md
+      - Wireframes: phase-3-design/wireframes.md
+  - Phase 4 — Design Specs:
+      - Breadcrumbs & Interlinking: phase-4-specs/breadcrumbs-spec.md
+      - Hi-Fi Designs: phase-4-specs/hifi-designs.md
+  - Phase 5 — Content & Production:
+      - Content Optimizations: phase-5-production/content-optimizations.md
+      - Production Handoff: phase-5-production/production-handoff.md
+      - Localization: phase-5-production/localization.md
+  - Self-Review: self-review.md
