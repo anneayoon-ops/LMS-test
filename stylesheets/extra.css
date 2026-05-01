@@ -59,6 +59,10 @@ body {
   padding: 0.6rem 0.8rem 0.2rem;
 }
 
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
 .md-nav__link {
   color: #73726e;
   font-size: 0.83rem;
