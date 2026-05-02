@@ -44,8 +44,13 @@ body {
   color: #37352f;
 }
 
-/* ── Sidebar — hidden ── */
-.md-sidebar {
+/* ── Sidebar ── */
+.md-sidebar--primary {
+  background-color: #fbfbfa;
+  border-right: 1px solid var(--notion-border);
+}
+
+.md-sidebar--secondary {
   display: none !important;
 }
 
