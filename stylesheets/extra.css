@@ -65,6 +65,12 @@ body {
   display: none !important;
 }
 
+/* Hide in-page jump links nested inside left nav */
+.md-nav--primary .md-nav--secondary,
+.md-nav--primary .md-nav__item .md-nav {
+  display: none !important;
+}
+
 .md-nav__link {
   color: #73726e;
   font-size: 0.83rem;
