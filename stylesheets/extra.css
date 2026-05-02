@@ -41,7 +41,7 @@ body {
 }
 
 .md-header__button.md-logo {
-  color: #37352f;
+  display: none !important;
 }
 
 /* ── Sidebar ── */
