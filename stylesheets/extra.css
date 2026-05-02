@@ -44,10 +44,9 @@ body {
   color: #37352f;
 }
 
-/* ── Sidebar / Navigation ── */
+/* ── Sidebar — hidden ── */
 .md-sidebar {
-  background-color: #fbfbfa;
-  border-right: 1px solid var(--notion-border);
+  display: none !important;
 }
 
 .md-nav__title {
